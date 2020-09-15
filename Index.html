@@ -21,6 +21,30 @@
     <!-- Custom Style   -->
     <link rel="stylesheet" href="./css/Style.css">
 
+    <!-- jQuery ScrollTo -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+
+    <script>
+        jQuery(function ($) {
+                //reset scroll
+                $.scrollTo(0);
+                $('#link1').click(function () {
+                    $.scrollTo($('#home'), 500);
+                });
+                $('#link2').click(function () {
+                    $.scrollTo($('#news'), 500);
+                });
+                $('#link3').click(function () {
+                    $.scrollTo($('#posts'), 500);
+                });
+                $('#link4').click(function () {
+                    $.scrollTo($('#contact'), 500);
+                });
+            }
+        );
+    </script>
+
 </head>
 
 <body>
@@ -40,16 +64,16 @@
         <div>
             <ul class="nav-items">
                 <li class="nav-link">
-                    <a href="#home">Strona główna</a>
+                    <a id="link1" href="#">Strona główna</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#news">Nowości</a>
+                    <a id="link2" href="#">Nowości</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#posts">Posty</a>
+                    <a id="link3" href="#">Posty</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#contact">Kontakt</a>
+                    <a id="link4" href="#">Kontakt</a>
                 </li>
                 <li class="nav-link">
                     <a href="#">Portfolio</a>
@@ -102,7 +126,7 @@
                     <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
                         <img src="./assets/Blog-post/everyday.jpg" alt="post-1">
                         <div class="blog-title">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
+                            <h3>Jak wygląda życie codzienne Polaków w Niemczech?</h3>
                             <button class="btn btn-blog">Życie codzienne</button>
                             <span>5 minut</span>
                         </div>
@@ -110,7 +134,7 @@
                     <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
                         <img src="./assets/Blog-post/country.jpg" alt="post-1">
                         <div class="blog-title">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
+                            <h3>Miejsca, które warto odwiedzić będąc w Niemczech</h3>
                             <button class="btn btn-blog">Kraj</button>
                             <span>7 minut</span>
                         </div>
@@ -118,7 +142,7 @@
                     <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
                         <img src="./assets/Blog-post/words.jpg" alt="post-1">
                         <div class="blog-title">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
+                            <h3>Słownictwo i zwroty ułatwiające codzienną komunikację</h3>
                             <button class="btn btn-blog">Słownictwo</button>
                             <span>4 minuty</span>
                         </div>
@@ -126,7 +150,7 @@
                     <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
                         <img src="./assets/Blog-post/science.jpg" alt="post-1">
                         <div class="blog-title">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
+                            <h3>Jak efektywnie uczyć się języka niemieckiego?</h3>
                             <button class="btn btn-blog">Nauka</button>
                             <span>6 minut</span>
                         </div>
@@ -134,7 +158,7 @@
                     <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
                         <img src="./assets/Blog-post/meals.jpg" alt="post-1">
                         <div class="blog-title">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
+                            <h3>Przysmaki prosto z Niemiec!</h3>
                             <button class="btn btn-blog">Jedzenie</button>
                             <span>2 minuty</span>
                         </div>
@@ -328,7 +352,7 @@
                                 <img src="./assets/popular-post/everyday.jpg" class="img" alt="blog1">
                             </div>
                             <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Wrzesień 15, 2020</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Wrzesień 15, 2020</span>
                                 <span>0 komentarzy</span>
                             </div>
                         </div>
@@ -342,7 +366,7 @@
                                 <img src="./assets/popular-post/country.jpg" class="img" alt="blog1">
                             </div>
                             <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Wrzesień 15, 2020</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Wrzesień 15, 2020</span>
                                 <span>0 komentarzy</span>
                             </div>
                         </div>
@@ -356,7 +380,7 @@
                                 <img src="./assets/popular-post/words.jpg" class="img" alt="blog1">
                             </div>
                             <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Wrzesień 15, 2020</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Wrzesień 15, 2020</span>
                                 <span>0 komentarzy</span>
                             </div>
                         </div>
@@ -370,7 +394,7 @@
                                 <img src="./assets/popular-post/science.jpg" class="img" alt="blog1">
                             </div>
                             <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Wrzesień 15, 2020</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Wrzesień 15, 2020</span>
                                 <span>0 komentarzy</span>
                             </div>
                         </div>
@@ -384,7 +408,7 @@
                                 <img src="./assets/popular-post/meals.jpg" class="img" alt="blog1">
                             </div>
                             <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Wrzesień 15, 2020</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Wrzesień 15, 2020</span>
                                 <span>0 komentarzy</span>
                             </div>
                         </div>
@@ -429,7 +453,7 @@
 <!-- --------------------------- Footer ---------------------------------------- -->
 
 <section id="contact">
-    
+
 </section>
 
 <footer class="footer">
@@ -437,8 +461,7 @@
         <div class="about-us" data-aos="fade-right" data-aos-delay="200">
             <h2>Trochę o mnie :)</h2>
             <p>Jeżeli interesuje Cię moja osoba i chciałbyś się dowiedzieć czegoś więcej o mnie -
-            zapraszam Cię serdecznie na moje portfolio! (link do mojego portfolio znajduje się na
-            górze strony 😊 )</p>
+                zapraszam Cię serdecznie na moje portfolio! (link znajduje się na górze strony 😊 )</p>
         </div>
         <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
             <h2>Małgorzata Urbańska</h2>
